@@ -5,8 +5,8 @@ import json as json
 from urllib.request import urlopen
 
 
-str_cod_eleicao = "544"
-str_eleicao = "e000544"
+str_cod_eleicao = "545"
+str_eleicao = "e000545"
 str_tipo_eleicao = "c0001"
 str_ano_eleicao = "2022"
 
