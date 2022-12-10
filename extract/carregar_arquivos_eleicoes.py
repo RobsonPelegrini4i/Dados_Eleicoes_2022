@@ -5,7 +5,6 @@ import json as json
 from urllib.request import urlopen
 
 
-#os.environ["GOOGLE_APPLICATION_CREDENTIALS"]=""
 str_cod_eleicao = "544"
 str_eleicao = "e000544"
 str_tipo_eleicao = "c0001"
@@ -36,7 +35,6 @@ def main():
     df["cd"] = df["cd"].str.lower()
 
     # Criar a coluna com a url
-    from operator import concat
     df2 =df.assign(url=lambda x: "https://resultados.tse.jus.br/oficial/ele"+ str_ano_eleicao +"/"+ str_cod_eleicao +"/dados/" + x.cd + "/" + x.cd + x.abr_cd + "-"+ str_tipo_eleicao +"-"+ str_eleicao +"-v.json")
 
 
